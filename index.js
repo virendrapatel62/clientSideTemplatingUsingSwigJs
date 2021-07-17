@@ -1,8 +1,30 @@
-const user = {
-    name: 'Virendra',
-    age: 23,
-    address: 'jabalpur MP'
-}
+const users = [
+    {
+        name: 'Sanddep',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Harsh',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Virendra',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Virendra',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Virendra',
+        age: 23,
+        address: 'jabalpur MP'
+    }
+]
 
 window.onload = () => {
     console.log("Window is loaded...")
@@ -12,13 +34,13 @@ window.onload = () => {
     const templateElement = document.querySelector("#template")
     const templateHtml = templateElement.innerHTML
     console.log({ templateHtml, swig })
-
     const template = swig.compile(templateHtml)
-    const html = template(user)
-    console.log(html);
+    const html = template(users)
 
 
     info.innerHTML = html
+
+    console.log(html);
 
     // const name = document.createElement("h1")
     // const age = document.createElement("h2")
