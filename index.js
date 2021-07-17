@@ -1,9 +1,50 @@
-const user = {
-    name: 'Virendra',
-    age: 23,
-    address: 'jabalpur MP'
-}
+const users = [
+    {
+        name: 'Sandeep',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Sandeep',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Sandeep',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Sandeep',
+        age: 23,
+        address: 'jabalpur MP'
+    },
+    {
+        name: 'Harsh',
+        age: 23,
+        address: 'jabalpur MP'
+    }
+    ,
+    {
+        name: 'Virendra',
+        age: 23,
+        address: 'jabalpur MP'
+    }
+    ,
+    {
+        name: 'Harsh',
+        age: 23,
+        address: 'jabalpur MP'
+    }
+    ,
+    {
+        name: 'Virendra',
+        age: 23,
+        address: 'jabalpur MP'
+    }
 
+
+]
 window.onload = () => {
     console.log("Window is loaded...")
 
@@ -14,7 +55,7 @@ window.onload = () => {
     console.log({ templateHtml, swig })
 
     const template = swig.compile(templateHtml)
-    const html = template(user)
+    const html = template({ persons: users })
     console.log(html);
 
 

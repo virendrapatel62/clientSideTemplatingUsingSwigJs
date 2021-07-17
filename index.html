@@ -11,11 +11,14 @@
     <script src="./index.js"></script>
 
     <script type='text/template' id="template">
+
+        {% for person in persons %}
         <div>
-            <h1>{{name}}</h1>
-            <h2>{{age}}</h2>
-            <p>{{address}}</p>
+           
+            <p>{{person.name}} - {{person.age}} -   {{person.address}}</p>
         </div>
+
+        {%endfor%}
     </script>
 </head>
 
