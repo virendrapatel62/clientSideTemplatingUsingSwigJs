@@ -1,33 +1,33 @@
 const users = [
     {
         name: 'Sandeep',
-        age: 23,
+        age: 24,
         address: 'jabalpur MP'
     },
     {
         name: 'Sandeep',
-        age: 23,
+        age: 24,
         address: 'jabalpur MP'
     },
     {
         name: 'Sandeep',
-        age: 23,
+        age: 26,
         address: 'jabalpur MP'
     },
     {
         name: 'Sandeep',
-        age: 23,
+        age: 25,
         address: 'jabalpur MP'
     },
     {
         name: 'Harsh',
-        age: 23,
+        age: 27,
         address: 'jabalpur MP'
     }
     ,
     {
         name: 'Virendra',
-        age: 23,
+        age: 30,
         address: 'jabalpur MP'
     }
     ,

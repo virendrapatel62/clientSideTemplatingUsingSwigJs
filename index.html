@@ -10,14 +10,23 @@
     <script src="./swig.min.js"></script>
     <script src="./index.js"></script>
 
-    <script type='text/template' id="template">
+    <style>
+        .red {
+            color: red
+        }
 
+        .blue {
+            color: blue
+        }
+    </style>
+
+    <script type='text/template' id="template">
         {% for person in persons %}
         <div>
-           
-            <p>{{person.name}} - {{person.age}} -   {{person.address}}</p>
+            <p
+             {%if person.age==30 %} class='red' {%else%}  class='blue' {%endif%} 
+             >{{person.name}} - {{person.age}} -   {{person.address}}</p>
         </div>
-
         {%endfor%}
     </script>
 </head>
